@@ -3,6 +3,16 @@ import java.util.*;
 public class Ifelse{
     public static void main(String[] args){
         
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        int number = sc.nextInt();
+
+        // Scanner scan = new Scanner(System.in);
+        // int number2 = scan.nextInt();
+
+        // Scanner sca = new Scanner(System.in);
+        // System.out.print("Enter a character: ");
+        // char check = sca.next(".").charAt(0);
 // **Easy (10 Questions)**
 
 // 1. Check if a Number is Positive or Negative
@@ -11,14 +21,11 @@ public class Ifelse{
 // Output:  
 // The number is negative.
 
-
-Scanner sc = new Scanner(System.in);
-int number = sc.nextInt();
-if(number < 0){
-System.out.println("Ther number is negative");
-}else{
-    System.out.println("Ther number is positive");
-}
+// if(number < 0){
+// System.out.println("Ther number is negative");
+// }else{
+//     System.out.println("Ther number is positive");
+// }
 
 
 // 2. Check if a Number is Even or Odd
@@ -26,6 +33,11 @@ System.out.println("Ther number is negative");
 // 7
 // Output:  
 // 7 is odd.
+    // if(number % 2 == 0){
+    //     System.out.println(number + "is even");
+    // }else{
+    //     System.out.println(number + " " +"is odd");
+    // }
 
 // 3. Check if a Character is a Vowel or Consonant
 // Input:  
@@ -33,11 +45,23 @@ System.out.println("Ther number is negative");
 // Output:  
 // e is a vowel.
 
+// if(check == "a" && check == "e" && check == "i" && check == "o" && check == "u"){
+//     System.out.println(check + " " +"is a vowel");
+// }else{
+//     System.out.println(check + " " + "is a consonant");
+// }
+
+
 // 4. Find the Maximum of Two Numbers
 // Input:  
 // 5, 8
 // Output:  
 // 8 is larger than 5.
+// if(number > number2 ){
+//     System.out.println(number + " " + "is larger than" + " " + number2);
+// }else{
+//     System.out.println(number2 + " " + "is larger than" + " " + number);
+// }
 
 // 5. Grade Evaluation
 // Input:  
@@ -45,11 +69,27 @@ System.out.println("Ther number is negative");
 // Output:  
 // Grade B
 
+// if(number > 90){
+//     System.out.println("Grade A");
+// }else if(number > 80){
+//     System.out.println("Grade B");
+// }else{
+//     System.out.println("Grade C");
+// }
+
+
 // 6. Find if a Number is Divisible by 3
 // Input:  
 // 9
 // Output:  
 // 9 is divisible by 3.
+
+// if(number % 3 == 0){
+//     System.out.println(number + "is divisible by 3");
+// }else{
+//     System.out.println(number + "is not divisible by 3");
+// }
+
 
 // 7. Check if a Number is Zero
 // Input:  
@@ -57,11 +97,25 @@ System.out.println("Ther number is negative");
 // Output:  
 // The number is zero.
 
+// if(number == 0){
+//     System.out.println("The number is zero");
+// }else{
+//     System.out.println("The number not is zero");
+// }
+
 // 8. Check if a Character is Uppercase or Lowercase
 // Input:  
 // A
 // Output:  
-// A is uppercase.
+// A is uppercase.+
+
+// if(Character.isUpperCase(check)){
+//     System.out.println("Character is in Uppercase!");
+// }else{
+//     System.out.println("Character is in Lowercase!");
+// }
+
+
 
 // 9. Find the Smallest of Two Numbers
 // Input:  
@@ -69,11 +123,19 @@ System.out.println("Ther number is negative");
 // Output:  
 // 3 is smaller than 6.
 
+
+
 // 10. Check if a Number is Greater Than 100
 // Input:  
 // 150
 // Output:  
 // The number is greater than 100.
+
+// if(number > 100){
+//     System.out.println("The number is greater than 100.");
+// }else{
+//     System.out.println("The number is smaller than 100.");
+// }
 
 
 // **Medium (10 Questions)**
@@ -82,7 +144,13 @@ System.out.println("Ther number is negative");
 // Input:  
 // 2024
 // Output:  
-// 2024 is a leap year.
+// 2024 is a leap year./
+if((number % 4 == 0  && number % 100 != 0) || number % 400 == 0){
+    System.out.println(number + "is a leap year");
+}else{
+    System.out.println(number + "is not a leap year");
+
+}
 
 // 12. Check if a Number is Divisible by 5 and 10
 // Input:  
