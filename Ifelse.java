@@ -7,8 +7,8 @@ public class Ifelse{
         System.out.print("Enter a character: ");
         int number = sc.nextInt();
 
-        // Scanner scan = new Scanner(System.in);
-        // int number2 = scan.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int number2 = scan.nextInt();
 
         // Scanner sca = new Scanner(System.in);
         // System.out.print("Enter a character: ");
@@ -145,18 +145,23 @@ public class Ifelse{
 // 2024
 // Output:  
 // 2024 is a leap year./
-if((number % 4 == 0  && number % 100 != 0) || number % 400 == 0){
-    System.out.println(number + "is a leap year");
-}else{
-    System.out.println(number + "is not a leap year");
-
-}
+// if((number % 4 == 0  && number % 100 != 0) || number % 400 == 0){
+//     System.out.println(number + "is a leap year");
+// }else{
+//     System.out.println(number + "is not a leap year");
+// }
 
 // 12. Check if a Number is Divisible by 5 and 10
 // Input:  
 // 50
 // Output:  
 // The number is divisible by both 5 and 10.
+// if(number % 2 == 0 && number2 % 2 == 0){
+//     System.out.println("The number is divisible by both 5 and 10");
+// }else{
+//     System.out.println("The number is not divisible by both 5 and 10");
+// }
+
 
 // 13. Age Classification
 // Input:  
@@ -175,6 +180,24 @@ if((number % 4 == 0  && number % 100 != 0) || number % 400 == 0){
 // 11
 // Output:  
 // 11 is a prime number.
+if(number < 1){
+    System.out.println(number + "Is Not A Prime Number");
+}else{
+    boolean isPrime = true; 
+
+    for(int i = 2; i<= number; i++){
+        if(number % 2 == 0){
+            isPrime = false;
+            break;
+        }
+    }
+    if(isPrime){
+        System.out.println("is prime");
+    }else{
+        System.out.println("is not prime"); 
+    }
+}
+
 
 // 16. Check if a Number is a Multiple of 7
 // Input:  
